@@ -23,7 +23,7 @@ template = PromptTemplate(
 
 chain = template | model | parser
 
-result = chain.invoke({'topic':'black hole'})
+result = chain.invoke({'topic':'universe'})
 
 print(result)
 
