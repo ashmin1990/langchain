@@ -3,7 +3,7 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_classic.schema.runnable import RunnableParallel
+# from langchain_classic.schema.runnable import RunnableParallel
 
 load_dotenv()
 
@@ -33,10 +33,15 @@ prompt3 = PromptTemplate(
 
 parser = StrOutputParser()
 
-parallel_chain = RunnableParallel({
+# parallel_chain = RunnableParallel({
+#     'notes': prompt1 | model1 | parser,
+#     'quiz': prompt2 | model2 | parser
+# })
+
+parallel_chain = {
     'notes': prompt1 | model1 | parser,
     'quiz': prompt2 | model2 | parser
-})
+}
 
 merge_chain = prompt3 | model1 | parser
 
