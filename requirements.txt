@@ -39,3 +39,7 @@ streamlit
 
 # Graph
 grandalf
+
+# Others
+pypdf
+bs4
