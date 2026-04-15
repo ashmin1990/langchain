@@ -12,6 +12,7 @@ query = "the geopolitical history of india and pakistan from the perspective of 
 
 # Get relevant Wikipedia documents
 docs = retriever.invoke(query)
+print(docs)
 
 # Print retrieved content
 for i, doc in enumerate(docs):
