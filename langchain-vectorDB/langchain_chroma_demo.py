@@ -32,7 +32,7 @@ docs = [doc1, doc2, doc3, doc4, doc5]
 
 vector_store = Chroma(
     embedding_function=OpenAIEmbeddings(),
-    persist_directory='chroma_db',
+    persist_directory='langchain-vectorDB/chroma_db',
     collection_name='sample'
 )
 
