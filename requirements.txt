@@ -46,7 +46,7 @@ grandalf
 pypdf
 bs4
 tiktoken
-pip install wikipedia
+wikipedia
 
 # Chroma DB
 langchain-chroma
