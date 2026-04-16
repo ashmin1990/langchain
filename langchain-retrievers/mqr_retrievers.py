@@ -1,9 +1,8 @@
 # Multiquery Retriever
 
 from langchain_chroma import Chroma
-from langchain_openai import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.documents import Document
-from langchain_openai import ChatOpenAI
 from langchain_classic.retrievers.multi_query import MultiQueryRetriever
 from dotenv import load_dotenv
 
