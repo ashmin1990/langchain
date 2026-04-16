@@ -50,6 +50,3 @@ pip install wikipedia
 
 # Chroma DB
 langchain-chroma
-
-# FAISS
-faiss-cpu
